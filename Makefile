@@ -7,7 +7,6 @@ make_env = $(PYTHON_COMMAND) -m venv $(ENV_NAME)
 env_dir = $(CURDIR)/$(ENV_NAME)
 bin_dir = $(env_dir)/bin
 activate_env = . $(bin_dir)/activate
-dotenv_file = .env
 
 define create-env
 	@echo Creating $@...
