@@ -4,6 +4,8 @@
 #
 #    pip-compile requirements.in
 #
+alembic==1.7.5
+    # via -r requirements.in
 anyio==3.5.0
     # via starlette
 asgiref==3.5.0
@@ -26,6 +28,16 @@ httptools==0.3.0
     # via uvicorn
 idna==3.3
     # via anyio
+importlib-metadata==4.10.1
+    # via alembic
+importlib-resources==5.4.0
+    # via alembic
+mako==1.1.6
+    # via alembic
+markupsafe==2.0.1
+    # via mako
+psycopg2==2.9.3
+    # via -r requirements.in
 pydantic==1.9.0
     # via fastapi
 pygments==2.11.2
@@ -47,7 +59,9 @@ six==1.16.0
 sniffio==1.2.0
     # via anyio
 sqlalchemy==1.4.31
-    # via -r requirements.in
+    # via
+    #   -r requirements.in
+    #   alembic
 starlette==0.17.1
     # via fastapi
 strawberry-graphql[fastapi]==0.95.1
@@ -64,3 +78,7 @@ watchgod==0.7
     # via uvicorn
 websockets==10.1
     # via uvicorn
+zipp==3.7.0
+    # via
+    #   importlib-metadata
+    #   importlib-resources

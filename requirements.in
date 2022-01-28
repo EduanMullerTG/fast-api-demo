@@ -1,3 +1,6 @@
 fastapi
 uvicorn[standard]
 strawberry-graphql[fastapi]
+psycopg2
+sqlalchemy
+alembic
